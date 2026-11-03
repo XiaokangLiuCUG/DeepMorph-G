@@ -13,7 +13,7 @@ python .../u2net_test.py
 ```
 3. Then, the contours of the shell can be extracted using landmarks_extraction.py. ps change to your path of the binary image file obtained from the second step. Shell contours will be saved as coordinates in a CSV file. Among them, eight landmarks and 160 will be extracted as shown in the figure above (trait matrix). Here, I only used one standard view for each specimen.  
  ```
-python .../landmarks extraction.py
+python .../landmarks_extraction.py
 ```
 4. Generalized Procrustes analysis (GPA) was conducted to align shells and remove the size effect. We can calculate the disparity of different subsets, as demonstrated in deepmorph-g for pca data.R. Please note that the gastropods_curveslide_combined.csv used to describe the relative positions of semi-landmarks. Its quantity and order must correspond with the coordinates extracted from the landmarks_extraction.py. Here, both of them need to be consistent.
 
